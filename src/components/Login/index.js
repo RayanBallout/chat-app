@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./login.css"
 
 const Login = () => {
@@ -22,7 +23,7 @@ const Login = () => {
 					<input type="submit" className="submit" value="Login" />
 				</form>
 				<p className="no-account">
-					Do not have an account? <a href="">Register</a>
+					Do not have an account? <Link to="/register">Register</Link>
 				</p>
 			</div>
 		</div>
