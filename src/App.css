@@ -8,6 +8,14 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary-color: #b8b8b8;
+	--secondary-color: #db4c04;
+	--background-color: #333333;
+	--text-color: #dddddd;
+}
+
 body {
+	background-color: var(--background-color);
 	font-family: "Poppins", sans-serif;
 }
