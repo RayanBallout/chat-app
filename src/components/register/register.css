@@ -1,0 +1,61 @@
+.register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.register-card {
+	background-color: var(--primary-color);
+	padding: 1.5rem 1.2rem;
+	color: white;
+	border-radius: 5px;
+}
+
+.register-card h1 {
+	text-align: center;
+	color: var(--secondary-color);
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+}
+
+.register-form input {
+	margin-bottom: 2rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.register-form .submit {
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 0.5rem;
+	border-radius: 6px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.register-form label {
+	font-size: 0.9rem;
+	color: var(--background-color);
+	margin-bottom: 2px;
+}
+
+.register-form input:focus {
+	outline: none;
+}
+
+.register-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.register-card .no-account {
+	color: var(--background-color);
+	font-size: 0.9rem;
+}
+
+.register-card .no-account a {
+	color: var(--secondary-color);
+	text-decoration: none;
+}
