@@ -57,8 +57,12 @@ function App() {
 							></Route>
 						</Routes>
 					</BrowserRouter>
-					<AddUser isActive={addUserActive} />
-					<Settings isActive={settingsIsOpen} />
+					{user && (
+						<>
+							<AddUser isActive={addUserActive} />
+							<Settings isActive={settingsIsOpen} />
+						</>
+					)}
 				</GeneralContext.Provider>
 			)}
 		</div>

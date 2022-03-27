@@ -3,12 +3,16 @@ import "./settings.css"
 import user from "../../assets/images/user.jpg"
 import { GeneralContext } from "../../context/generalContext"
 import close from "../../assets/icons/close.svg"
+import { useLogout } from "../../hooks/useLogout"
+import Loading from "../Loading"
 
 const Settings = ({ isActive }) => {
+	const { logout, isPending } = useLogout()
 	const { setSettingsIsOpen } = useContext(GeneralContext)
 	if (isActive) {
 		return (
 			<div className="settings-popup-container">
+				{isPending && <Loading />}
 				<div className="settings-popup-content">
 					<button
 						className="close"
@@ -82,7 +86,9 @@ const Settings = ({ isActive }) => {
 					</div>
 					<hr />
 					<div className="logout">
-						<button className="logout-btn">LOGOUT</button>
+						<button className="logout-btn" onClick={logout}>
+							LOGOUT
+						</button>
 					</div>
 				</div>
 			</div>
