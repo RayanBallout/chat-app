@@ -11,7 +11,7 @@ import AddUser from "./components/AddUser"
 
 function App() {
 	const [addUserActive, setAddUserActive] = useState(false)
-	const [chatIsOpen, setChatIsOpen] = useState(false)
+	const [chatIsOpen, setChatIsOpen] = useState(true)
 	return (
 		<div className="App">
 			<GeneralContext.Provider
