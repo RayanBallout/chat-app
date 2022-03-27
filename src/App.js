@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Login from "./components/Login"
 import Register from "./components/register"
+import ChatComponent from "./components/ChatComponent"
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Login />} />
 					<Route path="/register" element={<Register />} />
+					<Route path="/chats" element={<ChatComponent />} />
 				</Routes>
 			</BrowserRouter>
 		</div>
