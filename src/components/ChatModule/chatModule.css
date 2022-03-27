@@ -24,3 +24,35 @@
 	flex-grow: 1;
 	overflow-y: scroll;
 }
+
+.lower-bar {
+	padding: 0.6rem;
+	background-color: var(--background-color);
+}
+
+.lower-bar .lower-bar-form {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: 100%;
+}
+
+.lower-bar .text-input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-radius: 100px;
+	padding: 0 20px;
+	font-size: 1.1rem;
+}
+.lower-bar .text-input:focus {
+	outline: none;
+}
+.lower-bar .send-message {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.lower-bar .send-message .send-image {
+	width: 40px;
+}
