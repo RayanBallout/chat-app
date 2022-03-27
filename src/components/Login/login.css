@@ -20,8 +20,26 @@
 	margin-bottom: 1rem;
 }
 
-.login-form input {
+.login-form .field-input {
 	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form .field-input .error {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	margin-top: 3px;
+	color: var(--secondary-color);
+	font-size: 0.8rem;
+}
+
+.login-form .field-input .error .alert {
+	width: 14px;
+}
+
+.login-form input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid var(--secondary-color);
