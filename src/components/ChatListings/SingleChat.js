@@ -1,15 +1,20 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import userImage from "../../assets/images/user.jpg"
 import threeDots from "../../assets/icons/three-dots.svg"
 import check from "../../assets/icons/check.svg"
 import "./chatListings.css"
+import { GeneralContext } from "../../context/generalContext"
 
 const SingleChat = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
+	const { setChatIsOpen } = useContext(GeneralContext)
 
 	return (
 		<div className="single-chat-container">
-			<div className="single-chat-content">
+			<button
+				className="single-chat-content"
+				onClick={() => setChatIsOpen(false)}
+			>
 				<div className="left-content">
 					<img src={userImage} className="user-image" alt="user" />
 					<div className="text">
@@ -33,7 +38,7 @@ const SingleChat = () => {
 						<button className="menu-item">Delete</button>
 					</div>
 				</div>
-			</div>
+			</button>
 		</div>
 	)
 }

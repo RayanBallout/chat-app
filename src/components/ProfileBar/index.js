@@ -10,7 +10,7 @@ const ProfileBar = () => {
 	return (
 		<div className="profile-bar-container">
 			<div className="info-container">
-				<img src={userImage} className="user-image" alt="user image" />
+				<img src={userImage} className="user-image" alt="user" />
 				<p>Rayan Ballout</p>
 			</div>
 			<div className="settings-container">

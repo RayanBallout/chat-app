@@ -2,10 +2,10 @@ import React from "react"
 import ChatListings from "../ChatListings"
 import ChatModule from "../ChatModule"
 import "./ChatComponent.css"
-const ChatComponent = () => {
+const ChatComponent = ({ chatIsOpen }) => {
 	return (
 		<div className="chat-container">
-			<ChatListings />
+			<ChatListings chatIsOpen={chatIsOpen} />
 			<ChatModule />
 		</div>
 	)

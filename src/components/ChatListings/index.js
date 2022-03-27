@@ -3,9 +3,9 @@ import ProfileBar from "../ProfileBar"
 import "./chatListings.css"
 import SingleChat from "./SingleChat"
 
-const ChatListings = () => {
+const ChatListings = ({ chatIsOpen }) => {
 	return (
-		<div className="chat-listings-container">
+		<div className={`chat-listings-container ${chatIsOpen ? "open" : ""}`}>
 			<ProfileBar />
 			<div className="chat-list">
 				<SingleChat />

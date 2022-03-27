@@ -11,15 +11,20 @@ import AddUser from "./components/AddUser"
 
 function App() {
 	const [addUserActive, setAddUserActive] = useState(false)
-
+	const [chatIsOpen, setChatIsOpen] = useState(false)
 	return (
 		<div className="App">
-			<GeneralContext.Provider value={{ setAddUserActive }}>
+			<GeneralContext.Provider
+				value={{ setAddUserActive, setChatIsOpen }}
+			>
 				<BrowserRouter>
 					<Routes>
 						<Route path="/" element={<Login />} />
 						<Route path="/register" element={<Register />} />
-						<Route path="/chats" element={<ChatComponent />} />
+						<Route
+							path="/chats"
+							element={<ChatComponent chatIsOpen={chatIsOpen} />}
+						/>
 					</Routes>
 				</BrowserRouter>
 				<AddUser isActive={addUserActive} />

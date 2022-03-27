@@ -22,17 +22,21 @@
 	display: flex;
 	border-radius: 5px;
 	cursor: pointer;
-}
-
-.single-chat-content {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	border: none;
 }
 
 .single-chat-content .user-image {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
+}
+
+.single-chat-content .username {
+	font-size: 1rem;
 }
 
 .left-content {
@@ -89,4 +93,21 @@
 	background: none;
 	border: none;
 	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.chat-listings-container {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 10;
+		transform: translateX(-100%);
+		transition: all 250ms ease-out;
+	}
+	.chat-listings-container.open {
+		transform: translateX(0%);
+	}
 }

@@ -7,11 +7,17 @@
 
 .upper-bar-container {
 	padding: 0.6rem;
+	background-color: var(--background-color);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.upper-bar-container .profile-info {
 	display: flex;
 	align-items: center;
 	gap: 15px;
-	background-color: var(--background-color);
-	color: white;
 }
 
 .upper-bar-container .user-image {
@@ -20,6 +26,17 @@
 	object-fit: cover;
 	border-radius: 50%;
 }
+
+.upper-bar-container .open-chat {
+	background: none;
+	border: none;
+	display: none;
+}
+
+.upper-bar-container .open-chat img {
+	width: 30px;
+}
+
 .messages-container {
 	flex-grow: 1;
 	overflow-y: scroll;
@@ -115,4 +132,13 @@
 	border-right: 15px solid transparent;
 	bottom: 0;
 	right: -15px;
+}
+
+@media (max-width: 768px) {
+	.chat-module-container {
+		width: 100%;
+	}
+	.upper-bar-container .open-chat {
+		display: block;
+	}
 }
