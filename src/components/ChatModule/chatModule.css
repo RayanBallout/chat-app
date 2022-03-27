@@ -56,3 +56,63 @@
 .lower-bar .send-message .send-image {
 	width: 40px;
 }
+.messages-container {
+	padding: 0.6rem;
+}
+.message.recieved {
+	position: relative;
+	margin-bottom: 10px;
+	margin-left: 9px;
+	padding: 10px;
+	background-color: var(--secondary-color);
+	width: 60%;
+	color: white;
+	font-size: 0.9rem;
+	border-radius: 10px;
+}
+
+.message.sent {
+	position: relative;
+	margin-bottom: 10px;
+	margin-right: 9px;
+	float: right;
+	padding: 10px;
+	font-size: 0.9rem;
+	background-color: var(--background-color);
+	width: 60%;
+	color: white;
+	border-radius: 10px;
+}
+
+.message-content {
+	padding: 0;
+	margin: 0;
+}
+
+.message-timestamp {
+	text-align: right;
+}
+
+.message.recieved:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 15px solid var(--secondary-color);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	top: 0;
+	left: -15px;
+}
+
+.message.sent:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 15px solid var(--background-color);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	bottom: 0;
+	right: -15px;
+}
