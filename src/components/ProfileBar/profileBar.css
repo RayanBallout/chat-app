@@ -27,13 +27,13 @@
 	gap: 15px;
 }
 
-.settings-container .add-user-btn {
+.settings-container .setting-btn {
 	background: none;
 	border: none;
 	cursor: pointer;
 }
 
-.settings-container .add-user-btn:focus {
+.settings-container .setting-btn:focus {
 	outline: none;
 }
 

@@ -18,12 +18,14 @@ const ProfileBar = () => {
 					onClick={() => {
 						setAddUserActive(true)
 					}}
-					className="add-user-btn"
+					className="setting-btn"
+					title="Add user"
 				>
 					<img src={plusIcon} alt="add" />
 				</button>
-
-				<img src={settingsIcons} alt="settings" />
+				<button className="setting-btn" title="Settings">
+					<img src={settingsIcons} alt="settings" />
+				</button>
 			</div>
 		</div>
 	)
