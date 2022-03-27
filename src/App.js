@@ -13,7 +13,7 @@ import Settings from "./components/Settings"
 function App() {
 	const [addUserActive, setAddUserActive] = useState(false)
 	const [chatIsOpen, setChatIsOpen] = useState(true)
-	const [settingsIsOpen, setSettingsIsOpen] = useState(true)
+	const [settingsIsOpen, setSettingsIsOpen] = useState(false)
 
 	return (
 		<div className="App">
