@@ -2,3 +2,92 @@
 	width: 35%;
 	background-color: var(--background-color);
 }
+
+.chat-list {
+	padding: 1rem 0.7rem;
+}
+
+.single-chat-container {
+	padding: 1rem 0;
+	border-bottom: 1px solid #dddddd;
+}
+
+.single-chat-container:last-child {
+	border-bottom: none;
+}
+
+.single-chat-content {
+	background-color: var(--primary-color);
+	padding: 1rem;
+	display: flex;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.single-chat-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.single-chat-content .user-image {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.left-content {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.left-content .last-message {
+	font-size: 0.8rem;
+	color: rgba(51, 51, 51, 0.85);
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.left-content .last-message .check {
+	width: 15px;
+}
+
+.right-content {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.right-content .menu {
+	position: absolute;
+	right: calc(100% + 10px);
+	bottom: 0;
+	min-width: 100px;
+	background-color: white;
+	border-radius: 2px;
+	transform: scale(0);
+	opacity: 0;
+	transition: 200ms ease-out;
+	transform-origin: 100%;
+}
+
+.right-content .menu.open {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.right-content .menu button {
+	background: none;
+	border: none;
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	cursor: pointer;
+}
+
+.three-dots {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
