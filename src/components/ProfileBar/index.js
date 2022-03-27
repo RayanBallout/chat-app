@@ -6,7 +6,7 @@ import "./profileBar.css"
 import { GeneralContext } from "../../context/generalContext"
 
 const ProfileBar = () => {
-	const { setAddUserActive } = useContext(GeneralContext)
+	const { setAddUserActive, setSettingsIsOpen } = useContext(GeneralContext)
 	return (
 		<div className="profile-bar-container">
 			<div className="info-container">
@@ -23,7 +23,11 @@ const ProfileBar = () => {
 				>
 					<img src={plusIcon} alt="add" />
 				</button>
-				<button className="setting-btn" title="Settings">
+				<button
+					className="setting-btn"
+					title="Settings"
+					onClick={() => setSettingsIsOpen(true)}
+				>
 					<img src={settingsIcons} alt="settings" />
 				</button>
 			</div>

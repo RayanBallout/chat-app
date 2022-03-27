@@ -8,14 +8,17 @@ import ChatComponent from "./components/ChatComponent"
 import { useState } from "react"
 import { GeneralContext } from "./context/generalContext"
 import AddUser from "./components/AddUser"
+import Settings from "./components/Settings"
 
 function App() {
 	const [addUserActive, setAddUserActive] = useState(false)
 	const [chatIsOpen, setChatIsOpen] = useState(true)
+	const [settingsIsOpen, setSettingsIsOpen] = useState(true)
+
 	return (
 		<div className="App">
 			<GeneralContext.Provider
-				value={{ setAddUserActive, setChatIsOpen }}
+				value={{ setAddUserActive, setSettingsIsOpen, setChatIsOpen }}
 			>
 				<BrowserRouter>
 					<Routes>
@@ -28,6 +31,7 @@ function App() {
 					</Routes>
 				</BrowserRouter>
 				<AddUser isActive={addUserActive} />
+				<Settings isActive={settingsIsOpen} />
 			</GeneralContext.Provider>
 		</div>
 	)
