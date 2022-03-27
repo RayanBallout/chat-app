@@ -10,6 +10,7 @@
 	padding: 1.5rem 1.2rem;
 	color: white;
 	border-radius: 5px;
+	min-width: 30%;
 }
 
 .register-card h1 {
@@ -19,8 +20,25 @@
 	margin-bottom: 1rem;
 }
 
-.register-form input {
+.register-form .register-field {
 	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.register-form .register-field .error {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	margin-top: 3px;
+	color: var(--secondary-color);
+	font-size: 0.8rem;
+}
+
+.register-form .register-field .error .alert {
+	width: 14px;
+}
+.register-form input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid var(--secondary-color);
@@ -53,6 +71,7 @@
 .register-card .no-account {
 	color: var(--background-color);
 	font-size: 0.9rem;
+	text-align: center;
 }
 
 .register-card .no-account a {
