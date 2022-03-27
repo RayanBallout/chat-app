@@ -1,6 +1,8 @@
 .chat-module-container {
 	width: 65%;
 	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
 }
 
 .upper-bar-container {
@@ -17,4 +19,8 @@
 	height: 50px;
 	object-fit: cover;
 	border-radius: 50%;
+}
+.messages-container {
+	flex-grow: 1;
+	overflow-y: scroll;
 }

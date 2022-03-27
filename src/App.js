@@ -10,7 +10,7 @@ import { GeneralContext } from "./context/generalContext"
 import AddUser from "./components/AddUser"
 
 function App() {
-	const [addUserActive, setAddUserActive] = useState(true)
+	const [addUserActive, setAddUserActive] = useState(false)
 
 	return (
 		<div className="App">
