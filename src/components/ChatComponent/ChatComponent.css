@@ -1,5 +1,7 @@
 .chat-container {
 	display: flex;
 	justify-content: space-between;
-	gap: 10px;
+	gap: 2px;
+	min-height: 100vh;
+	background-color: var(--secondary-color);
 }

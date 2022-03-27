@@ -1,0 +1,31 @@
+.profile-bar-container {
+	padding: 0.6rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #242323;
+}
+
+.info-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: white;
+}
+
+.info-container .user-image {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.settings-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.settings-container img {
+	width: 30px;
+}

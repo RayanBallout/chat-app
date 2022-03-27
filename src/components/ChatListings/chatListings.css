@@ -1,4 +1,4 @@
 .chat-listings-container {
 	width: 35%;
-	background-color: white;
+	background-color: var(--background-color);
 }

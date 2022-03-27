@@ -1,3 +1,4 @@
 .chat-module-container {
 	width: 65%;
+	background-color: var(--primary-color);
 }
