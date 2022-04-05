@@ -18,7 +18,7 @@ const AddUser = ({ isActive }) => {
 					>
 						<img src={close} alt="close" />
 					</button>
-					<h3>Add User</h3>
+					<h3>Add User:</h3>
 					<div className="input-field">
 						<img
 							src={searchIcon}
