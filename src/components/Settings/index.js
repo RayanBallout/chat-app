@@ -9,12 +9,6 @@ import Loading from "../Loading"
 const Settings = ({ isActive }) => {
 	const { logout, isPending } = useLogout()
 	const { setSettingsIsOpen } = useContext(GeneralContext)
-
-	const logoutAction = () => {
-		setSettingsIsOpen(false)
-		logout()
-	}
-
 	if (isActive) {
 		return (
 			<div className="settings-popup-container">
@@ -92,7 +86,7 @@ const Settings = ({ isActive }) => {
 					</div>
 					<hr />
 					<div className="logout">
-						<button className="logout-btn" onClick={logoutAction}>
+						<button className="logout-btn" onClick={logout}>
 							LOGOUT
 						</button>
 					</div>
